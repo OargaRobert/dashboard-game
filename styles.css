@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+
+.grid-item{
+    background: grey;
+    padding:70px;
+    margin:10px;
+    text-align:center;
+    font-size:larger;
+    border-radius:10px;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+.life{
+    text-align:center;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.startGame{
+    font-family: "Tiny5", sans-serif;
+    position:absolute;
+    padding:400px;  
+    background-color: #44525c;
+}
+button{
+    background-color:rgb(158, 158, 158);
+    font-size: 40px;
+    padding:20px;
+    border-radius: 2rem;
+    border:none;
+    color:rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color:rgb(8, 62, 134);
+}
+.acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.heart1, .heart2, .heart3{
+    height:50px;
+}
+
+/* anmation for hearts and red cubes */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translateX(5px);  }
+    20% { transform: translateX(-5px);  }
+    30% { transform: translateX(5px);  }
+    40% { transform: translateX(-5px);  }
+    50% { transform: translateX(5px);  }
+    60% { transform: translateX(-5px);  }
+    70% { transform: translateX(5px);  }
+    80% { transform: translateX(-5px);  }
+    90% { transform: translateX(5px);  }
+    100% { transform: translateX(-5px);  }
+}
+.shake{
+    animation:shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+/* remove the click */
+.non-clickable {
+    pointer-events: none;
+    cursor: not-allowed;
+}
